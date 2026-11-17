@@ -34,3 +34,10 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+
+
+ik wil een app maken waarin je een geluksvis kan trekken.
+je rolt een soort case-opening zoals in csgo,
+hieruit kan je een van de geluksvissen winnen/rollen uit een array.
+
+ook is er een inventory waarin je kan zien welke geluksvissen je al hebt.

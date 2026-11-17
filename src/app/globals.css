@@ -1,6 +1,18 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+
+  --container: #14293A;
+  --container-text: #ffffff;
+  --container-hover: #00508F; 
+
+  /*#00508F blue
+  #4F3815 brown
+  #8F5601 poo
+  #14293A navy
+  #FFCD82 beige
+  #ADDBFF baby blue*/
+  
 }
 
 @media (prefers-color-scheme: dark) {
@@ -37,10 +49,6 @@ body {
   margin: 0;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
-}
 
 @media (prefers-color-scheme: dark) {
   html {
