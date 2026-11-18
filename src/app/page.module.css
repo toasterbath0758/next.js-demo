@@ -1,13 +1,12 @@
+.main {
+    gap: 1em;
+}
+
 .page {
   --background: #fafafa;
   --foreground: #fff;
-
   --text-primary: #000;
   --text-secondary: #666;
-
-  --button-primary-hover: #383838;
-  --button-secondary-hover: #f2f2f2;
-  --button-secondary-border: #ebebeb;
 
   display: flex;
   flex: 1;
@@ -28,14 +27,6 @@
   justify-content: space-between;
   background-color: var(--foreground);
   padding: 120px 60px;
-}
-
-.intro {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  text-align: left;
-  gap: 24px;
 }
 
 .intro h1 {
@@ -84,15 +75,6 @@
   font-weight: 500;
 }
 
-a.primary {
-  background: var(--text-primary);
-  color: var(--background);
-  gap: 8px;
-}
-
-a.secondary {
-  border-color: var(--button-secondary-border);
-}
 
 /* Enable hover only on non-touch devices */
 @media (hover: hover) and (pointer: fine) {
@@ -149,40 +131,9 @@ a.secondary {
   border-radius: 6px;
 }
 
-.section {
-    display: flex;
-}
-
-.fish {
-    &:hover {
-
-        background: (0 0 95%);
-        color: white;
-        outline: none;
-            scale: 130%;
-            filter: contrast(1)
-            drop-shadow(0px 2px 0px white)
-            drop-shadow(0px -2px 0px white)
-            drop-shadow(-2px 0px 0px white)
-            drop-shadow(2px 0px 0px white);
-
-            animation: wiebel 0.4s ease-in-out infinite alternate;
-        }
-    }
-
-    @keyframes wiebel {
-        0% {
-            transform: rotate(-5deg);
-        }
-
-        100% {
-            transform: rotate(5deg);
-        }
-    }
-
 .button {
     background: var(--container);
-
+    
     &:hover {
         background: var(--container-hover);
     }

@@ -1,45 +1,47 @@
 import Image from "next/image";
 import styles from "./page.module.css";
+import fish from "./fish-collection.module.css";
+// in ieder css file bestandsnaam moet module staan 
+// voorbeeld: naam.module.css
 
 export default function Home() {
   return (
     <div className={styles.page}>
       {/* className={styles.page} de styles hier is de import, de .page is de class uit de geimporteerde stylesheet*/}
       <main className={styles.main}>
-        <Image className={styles.logo} src="svg/next.svg" alt="Next.js logo" width={100} height={20} priority />
-
+        <Image className={styles.logo} src="/fish-logo.png" alt="geluksvis logo" width={100} height={40} priority />
         
+        {/* {" "} zorgt ervoor dat een spatie/enter in de text komt*/}
         <div className={styles.intro}>
-          <h1>
-            To get started, edit the{" "}
-            <code className={styles.code}>page.js</code> file.
-          </h1>
-          <p> Looking for a starting point or more instructions? Head over to{" "}
-            {/* {" "} zorgt ervoor dat een spatie in de text komt*/}
-            
-            <a href="" target="_blank" rel="noopener noreferrer">
+          <h1>De<code className={styles.code}>geluksvis</code>collectie</h1>
+          <p><a href="#" target="_blank" rel="noopener noreferrer">terug naar boven</a></p>
               {/* door target _blank opent de link op een nieuwe page*/}
-              Templates</a>
-            {" "}or the{" "}
-            <a href="" target="_blank" rel="noopener noreferrer">
-              Learning</a>{" "}
-            
-            center.
-          </p>
         </div>
 
 
-        <div className={styles.section}>
+        <div className={fish.section}>
           <div>
-            <Image className={styles.fish} src="/fish-1.png" alt="" width={150} height={150}/>
+            <Image className={fish.fish} src="/fish-1.png" alt="" width={150} height={150}/>
           </div>
           
           <div>
-            <Image className={styles.fish} src="/fish-2.png" alt="" width={150} height={150}/>
+            <Image className={fish.fish} src="/fish-2.png" alt="" width={150} height={150}/>
           </div>
           
           <div>
-            <Image className={styles.fish} src="/fish-3.png" alt="" width={150} height={150}/>
+            <Image className={fish.fish} src="/fish-3.png" alt="" width={150} height={150}/>
+          </div>
+
+          <div>
+            <Image className={fish.fish} src="/fish-4.png" alt="" width={150} height={150}/>
+          </div>
+          
+          <div>
+            <Image className={fish.fish} src="/fish-5.png" alt="" width={150} height={150}/>
+          </div>
+          
+          <div>
+            <Image className={fish.fish} src="/fish-6.png" alt="" width={150} height={150}/>
           </div>
         </div>
         
