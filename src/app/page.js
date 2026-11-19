@@ -18,40 +18,23 @@ export default function Home() {
               {/* door target _blank opent de link op een nieuwe page*/}
         </div>
 
-
         <div className={fish.section}>
-          <div>
-            <Image className={fish.fish} src="/fish-1.png" alt="" width={150} height={150}/>
-          </div>
-          
-          <div>
-            <Image className={fish.fish} src="/fish-2.png" alt="" width={150} height={150}/>
-          </div>
-          
-          <div>
-            <Image className={fish.fish} src="/fish-3.png" alt="" width={150} height={150}/>
-          </div>
-
-          <div>
-            <Image className={fish.fish} src="/fish-4.png" alt="" width={150} height={150}/>
-          </div>
-          
-          <div>
-            <Image className={fish.fish} src="/fish-5.png" alt="" width={150} height={150}/>
-          </div>
-          
-          <div>
-            <Image className={fish.fish} src="/fish-6.png" alt="" width={150} height={150}/>
-          </div>
+        {Array.from({ length: 16 }, (_, i) => i + 1).map((nummer) => (
+            <div key={nummer}>
+              <Image className={fish.fish} src={`/fish-${nummer}.png`}
+                alt="" width={150} height={150}/>
+            </div>
+          ))}
         </div>
+        
         
         <div className={styles.ctas}>
 
-          <a className={styles.button} href="kanker.nl" target="_blank" rel="noopener noreferrer">
+          <a className={styles.button} href=".nl" target="_blank" rel="noopener noreferrer">
             <Image className={styles.logo} src="/sleutel.svg" alt="sleutel" width={100} height={20} priority/>
           </a>
 
-          <a className={styles.button} href="kanker.nl" target="_blank" rel="noopener noreferrer">
+          <a className={styles.button} href=".nl" target="_blank" rel="noopener noreferrer">
             <Image className={styles.logo} src="/fish.svg" alt="" width={100} height={20} priority/>
           </a>
           
